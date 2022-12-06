@@ -47,6 +47,10 @@ var gTrans = {
         en: 'Price',
         he: 'מחיר'
     },
+    'book-img': {
+        en: 'Image',
+        he: 'תמונה'
+    },
     'book-action': {
         en: 'Actions',
         he: 'פעולות'
