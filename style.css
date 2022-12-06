@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    text-align: center;
+    overflow-x: hidden;
+    background-color: rgb(82, 88, 92);
+    color: #fff;
+}
+
+body.rtl {
+    direction: rtl;
+}
+
+
+.filter-book {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+
+}
+
+
+
+.modal1 {
+    background-color: #111;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: -300px;
+    left: 150%;
+    height: 80vh;
+    min-width: 300px;
+    text-align: center;
+
+}
+
+.modal1.open {
+    left: 50%;
+    transition: left .5s;
+}
+
+.modal1 h3 {
+    color: rgb(255, 255, 255);
+    text-decoration: overline;
+    text-transform: capitalize;
+}
+
+.modal1 h4 span {
+    color: rgb(255, 255, 255);
+}
+
+.modal1>p {
+    text-align: left;
+}
+
+.modal1 img {
+    height: 40%;
+    width: 20%;
+
+}
+
+.user-msg {
+    position: fixed;
+    bottom: -100px;
+    right: 10px;
+    background-color: #111;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.user-msg.open {
+    bottom: 10px;
+    transition: bottom .5s;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page button {
+    margin: 0 10px;
+}
+
+.point {
+    cursor: pointer;
+}
+
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book-preview {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    width: 20%;
+    margin: .5em;
+    border: 1px solid lightgray;
+    border-radius: .2em;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.book-preview .btn-remove {
+    float: right;
+}
+
+.book-preview img {
+    max-width: 100%;
+}
+
+.book-preview h5 {
+    font-size: 1.4em;
+    text-transform: capitalize;
+    text-decoration: overline;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.book-img {
+    width: 80px;
+    height: 70px;
+}
